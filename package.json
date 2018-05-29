@@ -1,0 +1,51 @@
+{
+  "name": "rc-viewer",
+  "version": "0.0.9",
+  "description": "Image viewer component for react, supports rotation, scale, zoom and so on, based on viewer.js",
+  "main": "dist/rc-viewer.js",
+  "scripts": {
+    "build": "rollup -c",
+    "buildw": "webpack --progress --hide-modules --config  ./webpack.config.js ",
+    "release": "npm run build && npm publish"
+  },
+  "author": "51594176@qq.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyk51594176/rc-viewer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hyk51594176/rc-viewer/issues"
+  },
+  "homepage": "https://github.com/15615741343/rc-viewer#readme",
+  "keywords": [
+    "react",
+    "viewer",
+    "gallery",
+    "picture",
+    "img",
+    "image"
+  ],
+  "engines": {
+    "node": ">=4",
+    "npm": ">=3"
+  },
+  "dependencies": {
+    "viewerjs": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "rollup": "^0.59.1",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-commonjs": "^9.1.3",
+    "rollup-plugin-uglify": "^3.0.0",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.4"
+  }
+}

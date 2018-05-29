@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.bootcss.com/viewerjs/1.0.0/viewer.min.js"></script>
+    <link href="https://cdn.bootcss.com/viewerjs/1.0.0/viewer.min.css" rel="stylesheet">
+    <script  src="../dist/rc-viewer.js"></script>
+    <script src="https://unpkg.com/babel-core@5.8.38/browser.min.js"></script>
+</head>
+<style>
+    img{
+        width:  200px;
+    }
+</style>
+<body>
+    <div id="example"></div>
+    <script type="text/babel">
+    var rcRef = function(e){
+     console.log(e.getViewer())
+    }
+    console.log(RcViewer)
+     ReactDOM.render(
+        <RcViewer ref={rcRef}>
+           <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526576170596&di=f8268d1ee572f19db014473949299965&imgtype=0&src=http%3A%2F%2Fimg3.xiazaizhijia.com%2Fwalls%2F20150417%2Fmid_84422024ff063d3.jpg"  />
+           <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526576170805&di=0c00dd682aaa8cb09a573f354490ac70&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2Fe%2F57d7cda31de02.jpg"  />
+           <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526576170805&di=165c9328f11c449fc398a5af968c9fbd&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimage%2Fc0%253Dpixel_huitu%252C0%252C0%252C294%252C40%2Fsign%3Dc9d9632d69d0f703f2bf9d9c61823451%2Feaf81a4c510fd9f994e060532e2dd42a2834a410.jpg"  />
+        </RcViewer>,
+        document.getElementById('example')
+      );
+  
+    </script>
+</body>
+<script>
+
+</script>
+</html>
