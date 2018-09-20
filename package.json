@@ -1,6 +1,6 @@
 {
   "name": "@hanyk/rc-viewer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Image viewer component for react, supports rotation, scale, zoom and so on, based on viewer.js",
   "main": "dist/rc-viewer.js",
   "scripts": {

@@ -1,7 +1,7 @@
 # rc-viewer
 Image viewer component for React, supports rotation, scale, zoom and so on, based on [viewer.js](https://github.com/fengyuanchen/viewerjs)
 
-## [Demo](https://hyk51594176.github.io/rc-viewer/demo/demo.html)
+## [Demo](https://hyk51594176.github.io/rc-viewer)
 
 ## umd
 
