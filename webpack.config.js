@@ -35,16 +35,16 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader',
         include: path.resolve(__dirname, './src'),
-        options:{
+        options: {
           presets: [
-            "env",
-            "stage-0",
-            "react"
+            'env',
+            'stage-0',
+            'react'
           ],
-          plugins : [ "add-module-exports"]
+          plugins: ['add-module-exports']
         }
-      }, 
-     
+      }
+
     ]
   }
 }

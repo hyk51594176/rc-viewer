@@ -10,23 +10,23 @@ export default {
     globals: { // 全局模块 提供将外部模块ID转换为全局模块的功能
       react: 'React',
       viewerjs: 'Viewer'
-    },
+    }
   },
   cache: true,
-  external:[
+  external: [
     'react',
     'viewerjs',
     'viewerjs/dist/viewer.min.css'
   ],
   plugins: [
     commonjs({
-      include: 'node_modules/**', // 包括
+      include: 'node_modules/**' // 包括
     }),
     babel({
-      exclude: 'node_modules/**', // 排除引入的库
+      exclude: 'node_modules/**' // 排除引入的库
       // runtimeHelpers:true,
-      // plugins: ['external-helpers'], 
+      // plugins: ['external-helpers'],
     }),
-    uglify(),
+    uglify()
   ]
-};
+}

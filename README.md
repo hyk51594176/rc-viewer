@@ -15,13 +15,13 @@ Image viewer component for React, supports rotation, scale, zoom and so on, base
 ## Installation 
 Install from GitHub via NPM
 ```bash
-npm install rc-viewer
+npm install @hanyk/rc-viewer
 ```
 
 ## Usage
 ```javascript
 import React,{ Component } from 'react';
-import RcViewer from 'rc-viewer'
+import RcViewer from '@hanyk/rc-viewer'
 class Test extends Component{
   render(){
     const options={}

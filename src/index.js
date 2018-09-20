@@ -31,7 +31,7 @@ export default class RcViewer extends Component {
     const imgarr2 = this.viewer.images || []
     if (!imgarr.length && !imgarr2.length) return true
     if (imgarr.length !== imgarr2.length) return false
-    return imgarr2.every((img,index) => imgarr[index] === img && img.src === imgarr[index].src)
+    return imgarr2.every((img, index) => imgarr[index] === img && img.src === imgarr[index].src)
   }
   viewerInit () {
     if (this.viewer) this.viewer.destroy()
@@ -42,7 +42,7 @@ export default class RcViewer extends Component {
     })
   }
   render () {
-    const { options = {}, children, ...others } = this.props
+    const { children, ...others } = this.props
     return (
       <div ref={(container) => { this.container = container }} {...others}>
         {children}
